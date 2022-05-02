@@ -27,7 +27,7 @@ class Queue {
 
   enqueue(value) {
     let newNode = new ListNode(value);
-    if (this.head == null) {
+    if (!this.head) {
       this.head = newNode;
       
     } else {
